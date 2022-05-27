@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Birthday</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="showButton">Show...</button>
+
+    <div class="modal" id="hide">
+      <div class="modal-header">
+        <button id="hideIcon">
+          <i class="fa fa-close"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Happy Birthday</h3>
+        <img src="1653619176309.jpg" alt="..." />
+        <p>
+          Seiring bertambahnya usia seseorang maka bertambah juga
+          kebijaksanaannya. Dirimu adalah salah satu temanku yang paling
+          bijaksana serta membuat hidupku lebih terarah, selamat hari lahir,
+          Panjang umur teman.
+        </p>
+        <form action="https://wa.me/6289698712185" target="_blank">
+          <button id="hideButton">Beri Ucapan!</button>
+        </form>
+
+        <h6>From me who is always behind the scenes.:)</h6>
+      </div>
+    </div>
+
+    <audio autoplay loop>
+      <source src="https://www.mboxdrive.com/hbd.ogg" type="audio/ogg" />
+      <source src="https://www.mboxdrive.com/hbd.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- JS File -->
+    <script type="text/javascript" src="script.js"></script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myAudio").autoplay;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
